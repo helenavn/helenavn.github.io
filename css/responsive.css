@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1024px) {
+	header {
+    	min-height: 680px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+    	min-height: 500px;
+    }
+
+    p {
+        line-height: 1.4;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.8em;
+    }
+    .section {
+        padding: 50px 0 0px;
+    }
+    .section .heading {
+        margin-bottom: 30px;
+    }
+    .intro-section {
+        padding-top: 350px;
+    }
+    .education-wrapper:after,
+    .education-wrapper .education:after {
+        display: none;
+    }
+    .collapse:not(.show) {
+    	display: block;
+    }
+}
+@media only screen and (max-width: 575px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+    	min-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    header .heading-wrapper {
+        padding: 30px 20px 20px;
+    }
+
+    header .info .icon {
+        font-size: 25px;
+    }
+
+    header .info .right-area {
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 260px) {
+    header .heading-wrapper {
+        padding: 10px 15px 0px;
+    }
+
+    header .info .icon {
+        font-size: 15px;
+    }
+
+    header .info .right-area {
+        margin-left: 20px;
+    }
+    header {
+    	min-height: 250px;
+    }
+}
