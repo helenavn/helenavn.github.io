@@ -22,7 +22,11 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+h1 em,
+h3 em {
+  word-break: break-all;
+  white-space: nowrap;
+}
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -101,7 +105,7 @@ h6 {
 
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 2ms !important;
   }
 }
 
@@ -133,13 +137,21 @@ h6 {
 
 .options {
   position: fixed;
-  top: 10px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
   display: block;
+  padding: 18px 10px 10px 10px;
+  width: 100%;
+  background: #fff;
 }
-
+.options ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 .options li {
   list-style: none;
+  padding: 0 10px;
 }
 
 .options li a.toggleColors span:before {
@@ -378,7 +390,7 @@ h6 {
 }
 
 section {
-  padding: 60px 0;
+  padding: 60px 15px;
   overflow: hidden;
 }
 
@@ -419,8 +431,8 @@ section {
   left: calc(50% - 20px);
 }
 
-.section-title p {
-  margin-bottom: 0;
+.section-title .caption {
+  margin-bottom: 20px;
 }
 
 .about .content h3 {
@@ -549,7 +561,9 @@ section {
 .recommendations .section-header {
   margin-bottom: 40px;
 }
-
+.img-fluid {
+  margin: 10px;
+}
 .recommendations .recommendations-carousel,
 .recommendations .recommendations-slider {
   overflow: hidden;
@@ -706,7 +720,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;

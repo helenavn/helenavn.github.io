@@ -16,6 +16,9 @@ body.trend {
 .trend a:hover {
   color: #b40909;
 }
+.trend .options {
+  background: #ce712d40;
+}
 
 .trend .back-to-top {
   background: #ff0000;
