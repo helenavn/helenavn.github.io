@@ -1,0 +1,165 @@
+
+body.trend {
+  color: #ffa460;
+}
+
+.trend a {
+  color: #ff0000;
+}
+.trend .options li a.toggleColors span:before {
+  content: 'Revest ';
+}
+.vn.trend .options li a.toggleColors span:before {
+  content: 'Đổi ';
+}
+
+.trend a:hover {
+  color: #b40909;
+}
+
+.trend .back-to-top {
+  background: #ff0000;
+}
+
+.trend #preloader:before {
+  border: 6px solid #ff0000;
+}
+
+.trend .nav-menu a,
+.trend .nav-menu a:focus {
+  color: #f56900;
+  background: #ce712d40;
+}
+
+.trend .nav-menu a span,
+.trend .nav-menu a:focus span {
+  color: #f56900;
+}
+
+.trend .nav-menu a:hover,
+.trend .nav-menu .active,
+.trend .nav-menu .active:focus,
+.trend .nav-menu li:hover>a {
+  color: #ff0000;
+  background: #fff3cd;
+}
+
+.trend .nav-menu a:hover span,
+.trend .nav-menu .active span,
+.trend .nav-menu .active:focus span,
+.trend .nav-menu li:hover>a span {
+  color: #ff0000;
+}
+
+.trend .mobile-nav-toggle i {
+  color: #f56900;
+}
+
+.trend .mobile-nav-active .mobile-nav-toggle {
+  background-color: #ff0000;
+}
+
+
+.trend #home h1 {
+  color: #f56900;
+}
+
+.trend #home p {
+  color: #f56900;
+}
+
+.trend #home p span {
+  color: #ff0000;
+}
+
+.trend #home .social-links a {
+  color: #f56900;
+}
+
+.trend #home .social-links a:hover {
+  color: #ff0000;
+}
+
+.trend .section-title h2 {
+  color: #f56900;
+}
+
+.trend .section-title h2::after {
+  background: #ff0000;
+}
+
+.trend .about .content h3 {
+  color: #c2631e66;
+}
+
+.trend .about .content ul i {
+  color: #ff0000;
+}
+
+
+.trend .skills .progress .skill {
+  color: #f56900;
+}
+
+.trend .skills .progress-bar-wrap {
+  background: #c2631e66;
+}
+
+.trend .skills .progress-bar {
+  background-color: #ff0000;
+}
+
+.trend .resume .resume-title {
+  color: #f56900;
+}
+
+.trend .resume .resume-item {
+  border-left: 2px solid #ff0000;
+}
+
+.trend .resume .resume-item h4 {
+  color: #ff0000;
+}
+
+.trend .resume .resume-item::before {
+  border: 2px solid #ff0000;
+}
+
+.trend .recommendations .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #ff0000;
+}
+
+.trend .recommendations .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ff0000;
+}
+
+.trend .contact .info i {
+  color: #ff0000;
+  background: #ce712d40;
+}
+
+.trend .contact .info h4 {
+  color: #f56900;
+}
+
+.trend .contact .info p {
+  color: #c2631e66;
+}
+
+.trend .contact .info .email:hover i,
+.trend .contact .info .address:hover i,
+.trend .contact .info .phone:hover i {
+  background: #ff0000;
+}
+
+.trend #footer {
+  color: #f56900;
+}
+
+.trend #footer .social-links a {
+  background: #ff0000;
+}
+
+.trend #footer .social-links a:hover {
+  background: #ff0000;
+}
