@@ -2,7 +2,9 @@
 body.trend {
   color: #ffa460;
 }
-
+.trend a.toggleColors {
+  color: #928f92;
+}
 .trend a {
   color: #ff0000;
 }
