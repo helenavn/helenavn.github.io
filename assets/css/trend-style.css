@@ -16,14 +16,14 @@ body.trend {
 }
 
 .trend a:hover {
-  color: #b40909;
+  color: #ff000078;
 }
 .trend .options {
   background: #ce712d40;
 }
 
 .trend .back-to-top {
-  background: #ff0000;
+  background: #ff000078;
 }
 
 .trend #preloader:before {
@@ -111,7 +111,7 @@ body.trend {
 }
 
 .trend .skills .progress-bar {
-  background-color: #ff0000;
+  background-color: #ff000078;
 }
 
 .trend .resume .resume-title {
@@ -162,7 +162,7 @@ body.trend {
 }
 
 .trend #footer .social-links a {
-  background: #ff0000;
+  background: #ff000078;
 }
 
 .trend #footer .social-links a:hover {
