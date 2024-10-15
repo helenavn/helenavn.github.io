@@ -63,7 +63,7 @@
     onscroll(document, toggleBacktotop)
   }
 
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function(_e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -119,7 +119,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function(_direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -128,11 +128,11 @@
     })
   }
 
-  on('click', '.toggleColors', function(e) {
+  on('click', '.toggleColors', function(_e) {
     select('body').classList.toggle('trend')
   })
 
-  on('click', '.toggleLanguages', function(e) {
+  on('click', '.toggleLanguages', function(_e) {
     select('#body').classList.toggle('vn')
     select('#body').classList.toggle('us')
   })
@@ -161,5 +161,9 @@
     })
   });
   new PureCounter();
+
+  document.addEventListener("contextmenu", function (e){
+    e.preventDefault();
+  }, false);
 
 })()

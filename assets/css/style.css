@@ -69,8 +69,18 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Guardilostra';
+  src: url('/assets/font/Guardilostra.otf') format('otf'),
+  url('/assets/font/Guardilostra.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains Mono", monospace;
   color: #928f92;
 }
 
@@ -197,12 +207,12 @@ h3 em {
   }
 }
 a.toggleColors {
-  color: #ffa460;
+  color: #f3ca47;
 }
 .options {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: block;
   padding: 18px 10px 10px 10px;
   width: 100%;
@@ -288,7 +298,6 @@ a.toggleColors {
   height: 56px;
   width: 100%;
   overflow: hidden;
-  transition: 0.3s;
 }
 
 .nav-menu a i,
