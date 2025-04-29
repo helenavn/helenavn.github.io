@@ -1,608 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Black Bean's Blogs</title>
-  <meta content="This is my personal page" name="description">
-  <meta content="BlackBean, Dau Den" name="keywords">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/trend-style.css" rel="stylesheet">
+  <!-- =====BOX ICONS===== -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Portfolio website complete</title>
 </head>
+<body>
+<!--===== HEADER =====-->
+<header class="l-header">
+  <nav class="nav bd-grid">
+    <div>
+      <a href="#" class="nav__logo">Helena</a>
+    </div>
 
-<body id="body" class="us">
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <div class="options">
-      <ul>
-        <li>
-          <a href="javascript: void(0)" class="nav-link toggleColors"><i class="bx bx-color"></i>
-            <span class="lang-us">Color</span>
-            <span class="lang-vn">Màu sắc</span>
-          </a>
-        </li>
-        <li><a href="javascript: void(0)" class="nav-link toggleLanguages"><i class="bi bi-translate"></i>
-          <span class="lang-vn"> Languages</span>
-          <span class="lang-us"> Ngôn Ngữ</span> <i class="flag flag-us"></i></a></li>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
       </ul>
     </div>
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-list-columns-reverse"></i> <span>Skills</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#recommendations" class="nav-link scrollto"><i class="bi bi-twitch"></i> <span>Recommendations</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="home" class="home d-flex flex-column justify-content-center">
-    <div class="container lang-vn" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Anh Nguyễn <em>"Đậu Đen"</em></h1>
-      <p>Tôi là <span class="typed" data-typed-items="Cư nhân công nghệ thông tin, người Việt Nam"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/blackbean" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/dauden" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/_anhnguyen_" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/is.black.bean" class="facebook"><i class="bx bxl-facebook"></i></a>
+
+    <div class="nav__toggle" id="nav-toggle">
+      <i class='bx bx-menu'></i>
+    </div>
+  </nav>
+</header>
+
+<main class="l-main">
+  <!--===== HOME =====-->
+  <section class="home bd-grid" id="home">
+    <div class="home__data">
+      <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Helena</span><br> high school student</h1>
+
+      <a href="#" class="button">Contact</a>
+    </div>
+
+    <div class="home__social">
+      <a href="https://linkedin.com/helenavn" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
+      <a href="https://facebook.com/helenavn" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
+      <a href="https://instagram.com/helenavn" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+      <a href="https://x.com/helenavn" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+      <a href="https://github.com/helenavn" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+    </div>
+
+    <div class="home__img">
+      <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <mask id="mask0" mask-type="alpha">
+          <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+        </mask>
+        <g mask="url(#mask0)">
+          <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+          <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!--===== ABOUT =====-->
+  <section class="about section " id="about">
+    <h2 class="section-title">About</h2>
+
+    <div class="about__container bd-grid">
+      <div class="about__img">
+        <img src="assets/img/about.jpg" alt="">
       </div>
-    </div>
-    <div class="container lang-us" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Anh Nguyen <em>"Black Bean"</em></h1>
-      <p>I'm <span class="typed" data-typed-items="a software engineer, Vietnamese"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/blackbean?locale=vi_VN" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/dauden" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/_anhnguyen_" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/is.black.bean" class="facebook"><i class="bx bxl-facebook"></i></a>
+
+      <div>
+        <h2 class="about__subtitle">I'am Helena</h2>
+        <p class="about__text">I'm studying at Phuong Long High School.</p>
       </div>
     </div>
   </section>
-  <main id="main">
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title lang-vn">
-          <h2>Giới thiệu</h2>
-          <div class="caption">
-            <h1>Tôi là Nguyễn Ngọc Tuấn Anh</h1>
-          Bạn có thể gọi tôi là <b>"Đậu Đen"</b> như những người bạn thân của tôi.
-          </div>
-        </div>
-        <div class="section-title lang-us">
-          <h2>About</h2>
-          <div class="caption">
-            <h1>I'm Nguyen Ngoc Tuan Anh</h1>
-          You also call me <b>"Black Bean"</b> as close friend.
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/avatar.jpeg" class="img-fluid" alt="avatar">
+  <!--===== ACHIEVEMENT =====-->
+  <section class="Achievement section" id="achievements">
+    <h2 class="section-title">Achievements</h2>
+
+    <div class="skills__container bd-grid">
+      <div>
+        <h2 class="skills__subtitle">Achievements</h2>
+        <p class="skills__text">.</p>
+        <div class="skills__data">
+          <div class="skills__names">
+            <i class='bx bxl-html5 skills__icon'></i>
+            <span class="skills__name">Math</span>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content lang-us">
-            <h3>Senior Full Stack Engineer.</h3>
-            <p class="fst-italic">
-             "Don't be a Tourist, be a Traveler"
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.codingland.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+84 944 534 128</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ho Chi Minh City, Viet Nam</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Science</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>me@codingland.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              As a Full stack engineer, I also work with many projects in order to apply a wide variety of technologies and other ad-hoc technical requests. I can adapt to new technologies without difficulty. I have had chances to work as a technical leader/team leader / technical supporter / senior developer and I’m also familiar with projects that applied Agile methodologies (SCRUM) or CMMI.
-            </p>
+          <div class="skills__bar skills__html">
+
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content lang-vn">
-            <h3>Senior Full Stack Engineer.</h3>
-            <p class="fst-italic">
-             "Đừng là Khách Du Lịch, Hãy là Người Du Lịch"
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.codingland.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Điện thoại:</strong> <span>+84 944 534 128</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nơi Sống:</strong> <span>Tp. Hồ Chí Minh, Viet Nam</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Học vấn:</strong> <span>Cử nhân</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Thư điện tử:</strong> <span>me@codingland.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Làm ngooài giờ:</strong> <span>Có</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              Là một kỹ sư phần mềm, tôi đã là việc với nhiều dự án với nhiều công nghệ khác nhau ngoài ra tôi có thể làm việc với những công nghệ mới mà không gặp khó khăn gì. Tôi đã từng làm ở nhiều vị trí như Trưởng nhóm, Trưởng nhóm kỹ thuật và làm việc với các dụ án áp dụng quy trình Agile methodologies (SCRUM) or CMMI.
-            </p>
+          <div>
+            <span class="skills__percentage">score 90/120</span>
           </div>
         </div>
-
       </div>
-    </section>
 
-    <section id="skills" class="skills section-bg">
-      <div class="container lang-us" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>I have work with both side frontend and backend, however all most time with backend. with Nodejs, Java and other languages like PHP, Ruby, C# etc...</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Restful/Microservice <i class="val">10+ yrs Experienced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Frontend<i class="val">7+ yrs Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Backend <i class="val">12+ yrs Experienced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Scrum & Agile <i class="val">12+ yrs Experienced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">DevOps <i class="val">5+ yrs Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Systems Analysis <i class="val">6+ yrs Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-      <div class="container lang-vn" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Kỹ Năng</h2>
-          <p>Tôi có thể làm việc cả frontend và backend, nhưng thời gian chủ yếu là backend, với Nodejs, Java và các ngôn ngữ lập trình khác như PHP, Ruby, C# vân vân.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Restful/Microservice <i class="val">10+ yrs Experienced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Frontend<i class="val">7+ yrs Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Backend <i class="val">12+ yrs Experienced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Scrum & Agile <i class="val">12+ yrs Experienced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">DevOps <i class="val">5+ yrs Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Systems Analysis <i class="val">6+ yrs Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="resume" class="resume">
-      <div class="container lang-us" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>The below is a short Summary about me. Please find more details about me as my <em><a target="_blank" href="assets/Anh_Nguyen.pdf">Resume Here</a></em>.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Nguyen Ngoc Tuan Anh</h4>
-              <p><em>A software engineer, but I like and do a lot 'DIY'. Love Traveler, Trekking, Camp...</em></p>
-              <ul>
-                <li>Ho Chi Minh city, Viet Nam</li>
-                <li>(+84) 0944534128</li>
-                <li>me@codingland.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of science in information technology</h4>
-              <h5>Graduated in Ho Chi Minh City University of Science</h5>
-              <p><em>Ho Chi Minh city, Viet Nam</em></p>
-              <p></p>
-            </div>
-            <div class="resume-item">
-              <h4>Higher diploma in software engineering</h4>
-              <h5>Graduated in Hue-Aptech (HueITTC)</h5>
-              <p><em>Hue city, Viet Nam</em></p>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Principal Software Engineer</h4>
-              <h5>Apr 2023 - Present</h5>
-              <p><em><b>Ringkas</b>, Ho Chi Minh City, Viet Nam</em></p>
-              <ul>
-                <li>Join to The Ringkas on 2023 from Ho Chi Minh city,</li>
-                <li>Working on Core Team to build a KPR platform that digitizes infrastructure and enables key stakeholders in the real estate ecosystem.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Senior Consultant Engineer</h4>
-              <h5>Feb 2020 - Feb 2022</h5>
-              <p><em><b>National Australia Bank</b>, Ho Chi Minh City, Viet Nam</em></p>
-              <ul>
-                <li>Join to The NAB Innovation Centre Vietnam is part of National Australia Bank (NAB) Technology on 2020 from Ho Chi Minh city, working on Core Banking for Home Lending.</li>
-                <li>Build service using Java, NodeJs with AWS for Home Lending Biz</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>... More</h4>
-              <h5>please find more information from my cv <a target="_blank" href="assets/Anh_Nguyen.pdf">Resume Here</a></h5>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="container lang-vn" data-aos="fade-up">
-        <div class="section-title">
-          <h2>SƠ YẾU LÝ LỊCH</h2>
-          <p>Dưới đây là mô tả ngắn ngọn về tôi, nếu bạn muốn tìm hiểu thêm bạn có thể tải <em><a target="_blank" href="assets/Anh_Nguyen.pdf">Sơ yêu lý lịch ở đây</a></em>.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Tóm tắt</h3>
-            <div class="resume-item pb-0">
-              <h4>Nguyễn Ngọc Tuấn Anh</h4>
-              <p><em>Cư nhân công nghệ thông tin, nhưng tôi thích và làm 'DIY'. Thích du lịch, leo núi và cắm trại...</em></p>
-              <ul>
-                <li>Tp. Hồ Chí Minh, Việt Nam</li>
-                <li>(+84) 0944534128</li>
-                <li>me@codingland.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Học Vấn</h3>
-            <div class="resume-item">
-              <h4>Cử nhận công nghệ thông tin</h4>
-              <h5>Tốt nghiệp tại Đại học Khoa học Tự nhiên</h5>
-              <p><em>Tp. Hồ Chí Minh, Việt Nam</em></p>
-              <p></p>
-            </div>
-            <div class="resume-item">
-              <h4>Higher diploma in software engineering</h4>
-              <h5>Tốt nghiệp tại Hue-Aptech (HueITTC)</h5>
-              <p><em>Tp. Huế, Việt Nam</em></p>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Kinh nghiệm làm việc</h3>
-            <div class="resume-item">
-              <h4>KỸ SƯ TƯ VẤN CAO CẤP</h4>
-              <h5>Tháng 2 2020 - Nay</h5>
-              <p><em><b>National Australia Bank</b>, Tp. Hồ Chí Minh, Việt Nam</em></p>
-              <ul>
-                <li>Tôi gia nhập The NAB Innovation Centre Vietnam là một phần của National Australia Bank (NAB) Technology vào đầu năm 2020 ở Tp. Hồ Chí Minh, Tham gia dự án Core Banking cho Vay mua nhà.</li>
-                <li>Sữ dụng công nghệ Java, NodeJs trên nền tảng AWS</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>KỸ SƯ LẬP TRÌNH CAO CẤP</h4>
-              <h5>Tháng 10, 2016 - Tháng 4, 2019</h5>
-              <p><em><b>Noria Group</b>, Tp. Hồ Chí Minh, Việt Nam</em></p>
-              <ul>
-                <li>Tôi gia nhập vào Noria từ năm 2016, tham gia vào các dự án Noria web portal and Self-service portal với Java, PHP và Angular.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="recommendations" class="recommendations section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2 class="lang-us">Recommendations</h2>
-          <h2 class="lang-vn">Đồng nghiệp Nhận xét</h2>
-        </div>
-
-        <div class="recommendations-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/recommendations/ngan.jpeg" class="testimonial-img" alt="">
-                <h3>Ngân Nguyễn</h3>
-                <h4>Senior Full Stack Developer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Tuan Anh is driven and motivated in his work and does what is necessary to make the client happy and is willing to work extra if things are behind. He has an excellent knowledge of the software tools and understands how your projects work.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/recommendations/nghivo.jpeg" class="testimonial-img" alt="">
-                <h3>Nghi Vo</h3>
-                <h4>Senior Engagement Manager at Amazon Web Services (AWS)</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Tuan Anh is highly skill web developer. He showed a good knowledge on .NET platform and worked very well with the team. I would highly recommend him any time.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/recommendations/richard.jpeg" class="testimonial-img" alt="">
-                <h3>Richard Wagstaff</h3>
-                <h4>VP Operations, Sports Products, North America at Bally's Interactive</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Tuan Anh is a highly skilled full-stack developer with excellent attention to detail and dedication to delivery timescales. He was a valued member of our team with a great sense of humour and I would highly recommend Tuan Anh to any future employer.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/recommendations/minhnhat.jpeg" class="testimonial-img" alt="">
-                <h3>Hoang Nhut Nguyen</h3>
-                <h4>Technical Director at Opus Solution</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I worked with Tuan Anh in several months in Technical team at HVN. He always keep good morale and helpfull for support. Quick reply with high quality in delivery, on-time release with fast research ability even in pressure environment.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/recommendations/thuan.jpeg" class="testimonial-img" alt="">
-                <h3>Thuan Tran Van</h3>
-                <h4>COO at Cadena HRM | HR and Payroll Management Software for Southeast Asia.</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Tuan Anh has a responsibility and a can-do working attitude, combining with his experiences and skills in multiple fields, he has had a greate contribution to the current job and development at Cadena. Love to work with him not only as a colleague but also a close team member to get the job done get and get everyone satisfy.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/recommendations/dungle.jpeg" class="testimonial-img" alt="">
-                <h3>Hoàng Dũng Lê</h3>
-                <h4>Tech-savvy leader</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Tuan Anh is an enthusiast developer, quick learner and a good problem solver. He can learn and apply new technologies easily. He a senior .NET developer, and also a PHP developer as well. In HVN, he have chances to supports multiple projects for solving technical issues and also for preparing automation build systems. It's my pleasure to work with him!
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container lang-us" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p><a href="https://goo.gl/maps/Hhmhx4JNkaHAuDbd9">Ho Chi Minh city, Viet Nam</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="mailto:me@codingland.com">me@codingland.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p><a href="tel:+84 944534128">+84 944534128</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="container lang-vn" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Liện Hệ</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Địa Chỉ:</h4>
-                <p><a href="https://goo.gl/maps/Hhmhx4JNkaHAuDbd9">Tp. Hồ Chí Minh, Việt Nam</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Thư điện tử:</h4>
-                <p><a href="mailto:me@codingland.com">me@codingland.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Điện Thoại:</h4>
-                <p><a href="tel:+84 944534128">+84 944534128</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer id="footer">
-    <div class="container lang-us">
-      <h3>Anh Nguyen <em>"Black Bean"</em></h3>
-      <p>You also call me "Black Bean" OR "Đậu Đen"</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/blackbean" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/dauden" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/_anhnguyen_" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/is.black.bean" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <div>
+        <img src="assets/img/work1.png" alt="" class="skills__img">
       </div>
     </div>
-    <div class="container lang-vn">
-      <h3>Anh Nguyễn <em>"Đậu Đen"</em></h3>
-      <p>Bạn có thể gọi tôi là "Black Bean" Hoặc "Đậu Đen"</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/blackbean" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/dauden" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/_anhnguyen_" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/is.black.bean" class="facebook"><i class="bx bxl-facebook"></i></a>
-      </div>
+  </section>
+
+  <section class="work section" id="work">
+    <h2 class="section-title">Photo</h2>
+
+    <div class="work__container bd-grid">
+      <a href="" class="work__img">
+        <img src="assets/img/work1.png" alt="">
+      </a>
+      <a href="" class="work__img">
+        <img src="assets/img/work1.png" alt="">
+      </a>
+      <a href="" class="work__img">
+        <img src="assets/img/work1.png" alt="">
+      </a>
+      <a href="" class="work__img">
+        <img src="assets/img/work1.png" alt="">
+      </a>
+      <a href="" class="work__img">
+        <img src="assets/img/work1.png" alt="">
+      </a>
+      <a href="" class="work__img">
+        <img src="assets/img/work1.png" alt="">
+      </a>
     </div>
-  </footer>
+  </section>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/js/main.js"></script>
+  <section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
 
+    <div class="contact__container bd-grid">
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="footer__title">Helena</p>
+  <div class="footer__social">
+    <a href="https://facebook.com/helenavn" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+    <a href="https://instagram.com/helenavn" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+    <a href="https://x.com/helenavn" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    <a href="https://github.com/helenavn" class="footer__icon"><i class='bx bxl-github' ></i></a>
+  </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>

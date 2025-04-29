@@ -1,7 +1,6 @@
 .tmp
 .vscode
 .sass-cache
-node_modules
 .idea
 # General
 .DS_Store
