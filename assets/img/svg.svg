@@ -1,0 +1,8 @@
+<svg class="home_blob" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Heart Icon</title>
+  <desc id="desc">A simple vector heart icon</desc>
+  <!-- Soft background circle using theme color -->
+  <circle cx="250" cy="250" r="900" fill="currentColor" opacity="0.12"/>
+  <!-- Heart shape -->
+  <path d="M125 232c-4.8 0-9.6-1.8-13.3-5.4l-64.5-61.7c-22.8-21.8-24.1-58.2-2.9-81.5 10.8-11.7 25.7-18.4 41.4-18.4 14.4 0 28.2 5.6 38.3 15.7l1 1 1-1c10.2-10.1 23.9-15.7 38.3-15.7 15.7 0 30.6 6.7 41.4 18.4 21.1 23.3 19.9 59.7-2.9 81.5l-64.5 61.7c-3.7 3.6-8.5 5.4-13.3 5.4z" fill="#fff" stroke="currentColor" stroke-width="6"/>
+</svg>
